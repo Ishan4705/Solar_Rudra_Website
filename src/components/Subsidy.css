@@ -1,0 +1,149 @@
+/* ============================================================
+   SUBSIDY INFORMATION PANEL
+   ============================================================ */
+
+.subsidy {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.subsidy__wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+}
+
+/* Left Content */
+.subsidy__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subsidy__title {
+  font-family: var(--font-hindi);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.subsidy__tagline {
+  font-family: var(--font-hindi);
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.subsidy__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.subsidy__check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.subsidy__check-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.subsidy__footer {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.6;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+.subsidy__link {
+  color: var(--gold);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.subsidy__link:hover {
+  color: var(--gold-hover);
+  text-decoration: underline;
+}
+
+/* Right Diagram */
+.subsidy__diagram {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subsidy__diagram-card {
+  background: var(--slate);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 1px solid var(--border-light);
+  width: 100%;
+  max-width: 440px;
+}
+
+.subsidy__diagram-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .subsidy__wrapper {
+    gap: 40px;
+  }
+
+  .subsidy__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subsidy {
+    padding: 70px 0;
+  }
+
+  .subsidy__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .subsidy__title {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+
+  .subsidy__tagline {
+    text-align: center;
+  }
+
+  .subsidy__diagram-card {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subsidy__title {
+    font-size: 1.4rem;
+  }
+
+  .subsidy__check-item {
+    font-size: 0.9rem;
+  }
+}

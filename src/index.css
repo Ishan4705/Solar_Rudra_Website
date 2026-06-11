@@ -1,0 +1,186 @@
+/* ============================================================
+   RUDRA SOLAR SOLUTIONS — Global Design System
+   ============================================================ */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  color: #1a1a2e;
+  background: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* --- CSS Custom Properties --- */
+:root {
+  /* Colors */
+  --navy: #0F2042;
+  --navy-light: #162d5a;
+  --navy-dark: #0a1630;
+  --gold: #FFA500;
+  --gold-hover: #e5a93c;
+  --gold-light: #ffc44d;
+  --gold-glow: rgba(255, 165, 0, 0.25);
+  --white: #ffffff;
+  --slate: #F4F6F9;
+  --slate-dark: #e8ecf1;
+  --text-dark: #1a1a2e;
+  --text-muted: #5a6178;
+  --text-light: #8892a8;
+  --border-light: #e2e6ed;
+
+  /* Typography */
+  --font-heading: 'Montserrat', 'Inter', sans-serif;
+  --font-hindi: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', 'Roboto', sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-width: 1200px;
+  --container-padding: 0 24px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.35s ease;
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(15, 32, 66, 0.06);
+  --shadow-md: 0 4px 20px rgba(15, 32, 66, 0.1);
+  --shadow-lg: 0 8px 40px rgba(15, 32, 66, 0.14);
+  --shadow-gold: 0 4px 24px rgba(255, 165, 0, 0.3);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 50px;
+}
+
+/* --- Utility: Container --- */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* --- Utility: Section Heading --- */
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  margin: 16px auto 0;
+}
+
+/* --- Utility: CTA Button --- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-hover));
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-gold);
+  transition: all var(--transition-medium);
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 32px rgba(255, 165, 0, 0.45);
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* --- Scroll Animations --- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0.05s; }
+.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 0.15s; }
+.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 0.2s; }
+.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 0.25s; }
+.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 0.3s; }
+.stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 0.35s; }
+
+/* --- Responsive Typography --- */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.65rem;
+    margin-bottom: 32px;
+  }
+}
