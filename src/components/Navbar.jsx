@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { name: 'Home', href: '#home' },
   { name: 'Benefits', href: '#benefits' },
   { name: 'PM Surya Ghar', href: '#subsidy' },
+  { name: 'Reviews', href: '#testimonials' },
   { name: 'Contact Us', href: '#footer' },
 ];
 

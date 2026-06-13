@@ -1,0 +1,254 @@
+/* ============================================================
+   RUDRA SOLAR SOLUTIONS — Testimonials Stylesheet
+   ============================================================ */
+
+.testimonials {
+  background: var(--slate);
+  padding: var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Testimonial Card Design --- */
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 30px;
+  width: 380px; /* Fixed width for standard layout in marquee */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-light);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.testimonial-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card__meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy);
+  margin: 0;
+}
+
+.testimonial-card__location {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin: 2px 0 0 0;
+}
+
+.testimonial-card__quote-icon {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 3rem;
+  color: rgba(255, 165, 0, 0.15);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.testimonial-card__stars {
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.testimonial-card__text {
+  font-size: 0.925rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* --- Desktop Marquee Styles --- */
+.testimonials__desktop {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.testimonials__marquee-row {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  mask-image: linear-gradient(to right, transparent, white 10%, white 90%, transparent);
+}
+
+.testimonials__marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+
+.testimonials__marquee-group {
+  display: flex;
+  gap: 24px;
+  animation-play-state: running;
+}
+
+/* Pause scroll animation when user hovers */
+.testimonials__marquee-track:hover .testimonials__marquee-group {
+  animation-play-state: paused;
+}
+
+/* Marquee directional movements */
+.testimonials__marquee-track--left .testimonials__marquee-group {
+  animation: marquee-left 45s linear infinite;
+}
+
+.testimonials__marquee-track--right .testimonials__marquee-group {
+  animation: marquee-right 45s linear infinite;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* --- Mobile Carousel Styles --- */
+.testimonials__mobile {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.testimonials__carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.testimonials__carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonials__carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.testimonials__carousel-slide .testimonial-card {
+  width: 100%;
+  box-shadow: var(--shadow-md);
+}
+
+.testimonials__carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 16px;
+}
+
+.testimonials__control-btn {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--navy);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.testimonials__control-btn:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.testimonials__carousel-dots {
+  display: flex;
+  gap: 8px;
+  max-width: 60%;
+  overflow-x: auto;
+  padding: 4px 0;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.testimonials__carousel-dots::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.testimonials__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-light);
+  opacity: 0.5;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.testimonials__dot--active {
+  background: var(--gold);
+  opacity: 1;
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* Adjustments for tablets and general responsive layout */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 0;
+  }
+}

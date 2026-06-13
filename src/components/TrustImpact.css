@@ -1,0 +1,237 @@
+/* ============================================================
+   RUDRA SOLAR SOLUTIONS — Trust & Impact Stylesheet
+   ============================================================ */
+
+.trust-impact {
+  background: radial-gradient(circle at 10% 20%, rgba(15, 32, 66, 0.03) 0%, rgba(255, 165, 0, 0.02) 90%), #ffffff;
+  padding: var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Counters Grid --- */
+.trust-impact__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.trust-impact__card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 35px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-medium);
+  position: relative;
+}
+
+.trust-impact__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--navy-light), var(--gold));
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+}
+
+.trust-impact__card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.trust-impact__card:hover::before {
+  opacity: 1;
+}
+
+.trust-impact__card-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 20px;
+}
+
+.trust-impact__card-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.trust-impact__number {
+  font-family: var(--font-heading);
+  font-size: 2.85rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.trust-impact__label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--navy-light);
+  margin-bottom: 4px;
+}
+
+.trust-impact__desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* --- Regional Footprints Section --- */
+.trust-impact__footprint {
+  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  border-radius: var(--radius-xl);
+  padding: 50px;
+  color: var(--white);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.trust-impact__footprint::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.trust-impact__footprint-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trust-impact__footprint-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.trust-impact__footprint-header p {
+  font-size: 1rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.trust-impact__footprint-regions {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.trust-impact__region-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-impact__region-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.trust-impact__region-title .region-icon {
+  font-size: 1.5rem;
+}
+
+.trust-impact__region-title h4 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.trust-impact__region-desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.trust-impact__city-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.city-tag {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.825rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.city-tag:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+}
+
+.trust-impact__region-divider {
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  align-self: stretch;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .trust-impact__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trust-impact__footprint {
+    padding: 35px 24px;
+  }
+
+  .trust-impact__footprint-regions {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .trust-impact__region-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  }
+
+  .trust-impact__footprint-header h3 {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .trust-impact__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .trust-impact__number {
+    font-size: 2.3rem;
+  }
+}

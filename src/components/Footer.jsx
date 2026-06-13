@@ -23,6 +23,7 @@ const Footer = () => {
               <a href="#home" className="footer__nav-link" onClick={(e) => handleNavClick(e, '#home')}>Home</a>
               <a href="#benefits" className="footer__nav-link" onClick={(e) => handleNavClick(e, '#benefits')}>Benefits</a>
               <a href="#subsidy" className="footer__nav-link" onClick={(e) => handleNavClick(e, '#subsidy')}>PM Surya Ghar</a>
+              <a href="#testimonials" className="footer__nav-link" onClick={(e) => handleNavClick(e, '#testimonials')}>Reviews</a>
               <a href="#footer" className="footer__nav-link" onClick={(e) => handleNavClick(e, '#footer')}>Contact Us</a>
             </nav>
           </div>
