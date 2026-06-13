@@ -33,7 +33,11 @@ const Footer = () => {
             <h4 className="footer__col-title">Contact Us</h4>
             <div className="footer__contact">
               <div className="footer__contact-group">
-                <span className="footer__contact-icon">📞</span>
+                <span className="footer__contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.7 1 1 1 0 01.95 1v3.58a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.5a1 1 0 011 .95 11.72 11.72 0 001 3.7c.09.31.02.66-.27.95l-2.21 2.2z" />
+                  </svg>
+                </span>
                 <div className="footer__contact-lines">
                   <a href="tel:+919005067100" className="footer__contact-link">+91 90050 67100</a>
                   <a href="tel:+917905094833" className="footer__contact-link">+91 79050 94833</a>
@@ -41,15 +45,33 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer__contact-group">
-                <span className="footer__contact-icon">📧</span>
+                <span className="footer__contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                </span>
                 <a href="mailto:rudrasolarpanel@gmail.com" className="footer__contact-link">
                   rudrasolarpanel@gmail.com
                 </a>
               </div>
               <div className="footer__contact-group">
-                <span className="footer__contact-icon">📸</span>
+                <span className="footer__contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                  </svg>
+                </span>
                 <a href="https://www.instagram.com/rudra.solar.solutions" target="_blank" rel="noopener noreferrer" className="footer__contact-link">
-                  @rudra.solar.solutions
+                  rudra.solar.solutions
+                </a>
+              </div>
+              <div className="footer__contact-group">
+                <span className="footer__contact-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                  </svg>
+                </span>
+                <a href="https://ishan4705.github.io/Solar_Rudra_Website" target="_blank" rel="noopener noreferrer" className="footer__contact-link">
+                  rudrasolarsolutions.com
                 </a>
               </div>
             </div>
@@ -60,10 +82,10 @@ const Footer = () => {
             <img src={logo} alt="Rudra Solar Solutions" className="footer__brand-logo" />
             <div className="footer__brand-ornament">
               <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M40 4 L48 32 L76 32 L54 50 L62 78 L40 60 L18 78 L26 50 L4 32 L32 32 Z" 
-                      fill="none" stroke="var(--gold)" strokeWidth="1.5" opacity="0.3" />
-                <path d="M40 16 L45 32 L62 32 L48 44 L54 60 L40 50 L26 60 L32 44 L18 32 L35 32 Z" 
-                      fill="var(--gold)" opacity="0.15" />
+                <path d="M40 4 L48 32 L76 32 L54 50 L62 78 L40 60 L18 78 L26 50 L4 32 L32 32 Z"
+                  fill="none" stroke="var(--gold)" strokeWidth="1.5" opacity="0.3" />
+                <path d="M40 16 L45 32 L62 32 L48 44 L54 60 L40 50 L26 60 L32 44 L18 32 L35 32 Z"
+                  fill="var(--gold)" opacity="0.15" />
               </svg>
             </div>
           </div>
@@ -76,21 +98,21 @@ const Footer = () => {
           </p>
           <div className="footer__social">
             {/* Instagram */}
-            <a 
-              href="https://www.instagram.com/rudra.solar.solutions" 
-              className="footer__social-link" 
+            <a
+              href="https://www.instagram.com/rudra.solar.solutions"
+              className="footer__social-link"
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
               </svg>
             </a>
             {/* Email */}
-            <a 
-              href="mailto:rudrasolarpanel@gmail.com" 
-              className="footer__social-link" 
+            <a
+              href="mailto:rudrasolarpanel@gmail.com"
+              className="footer__social-link"
               aria-label="Email"
             >
               <svg viewBox="0 0 24 24" fill="currentColor">
