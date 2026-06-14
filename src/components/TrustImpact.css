@@ -3,7 +3,10 @@
    ============================================================ */
 
 .trust-impact {
-  background: radial-gradient(circle at 10% 20%, rgba(15, 32, 66, 0.03) 0%, rgba(255, 165, 0, 0.02) 90%), #ffffff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(244, 246, 249, 0.86)), url('../assets/solar-indian-rooftop-collage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: var(--section-padding);
   position: relative;
   overflow: hidden;
@@ -88,7 +91,10 @@
 
 /* --- Regional Footprints Section --- */
 .trust-impact__footprint {
-  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+  background: linear-gradient(135deg, rgba(15, 32, 66, 0.93), rgba(10, 22, 48, 0.96)), url('../assets/hero-solar-installers.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: var(--radius-xl);
   padding: 50px;
   color: var(--white);

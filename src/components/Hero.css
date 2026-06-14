@@ -78,30 +78,52 @@
 
 .hero__title {
   font-family: var(--font-heading);
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: 900;
   color: var(--white);
-  line-height: 1.15;
+  line-height: 1.1;
   margin-bottom: 16px;
+  letter-spacing: 0.5px;
   animation: fadeInUp 0.7s ease 0.1s forwards;
   opacity: 0;
 }
 
-.hero__title-highlight {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+.hero__title-pvt {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 1.5px;
+  vertical-align: middle;
+}
+
+.hero__tagline {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  animation: fadeInUp 0.7s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.hero__tagline-highlight {
+  color: var(--gold);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.hero__subtitle {
+.hero__slogan {
   font-family: var(--font-hindi);
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.60);
   font-style: italic;
   margin-bottom: 32px;
-  animation: fadeInUp 0.7s ease 0.2s forwards;
+  animation: fadeInUp 0.7s ease 0.25s forwards;
   opacity: 0;
 }
 
@@ -261,7 +283,15 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .hero__title {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+  }
+
+  .hero__title-pvt {
+    font-size: 1.3rem;
+  }
+
+  .hero__tagline {
+    font-size: 1.2rem;
   }
 
   .hero__container {
@@ -290,11 +320,19 @@
   }
 
   .hero__title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 
-  .hero__subtitle {
+  .hero__title-pvt {
     font-size: 1.15rem;
+  }
+
+  .hero__tagline {
+    font-size: 1.15rem;
+  }
+
+  .hero__slogan {
+    font-size: 1.05rem;
   }
 
   .hero__features {
@@ -315,11 +353,19 @@
 
 @media (max-width: 480px) {
   .hero__title {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 
-  .hero__subtitle {
+  .hero__title-pvt {
+    font-size: 0.95rem;
+  }
+
+  .hero__tagline {
     font-size: 1rem;
+  }
+
+  .hero__slogan {
+    font-size: 0.9rem;
   }
 
   .hero__feature {

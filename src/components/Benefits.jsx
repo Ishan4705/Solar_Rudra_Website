@@ -4,7 +4,7 @@ import './Benefits.css';
 const BENEFITS = [
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <rect x="6" y="36" width="8" height="6" rx="1" fill="#FFA500" opacity="0.4" />
         <rect x="16" y="28" width="8" height="14" rx="1" fill="#FFA500" opacity="0.6" />
         <rect x="26" y="18" width="8" height="24" rx="1" fill="#FFA500" opacity="0.8" />
@@ -17,7 +17,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <rect x="8" y="8" width="32" height="32" rx="4" stroke="#FFA500" strokeWidth="2.5" />
         <line x1="8" y1="16" x2="40" y2="16" stroke="#FFA500" strokeWidth="2" />
         <text x="24" y="33" textAnchor="middle" fill="#0F2042" fontFamily="Montserrat, sans-serif" fontWeight="900" fontSize="14">25</text>
@@ -29,7 +29,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <path d="M24 6 C16 6 10 12 10 18 C10 28 24 42 24 42 C24 42 38 28 38 18 C38 12 32 6 24 6Z" fill="#FFA500" opacity="0.2" stroke="#FFA500" strokeWidth="2" />
         <circle cx="24" cy="18" r="6" fill="#FFA500" />
         <text x="24" y="21" textAnchor="middle" fill="#0F2042" fontFamily="Montserrat, sans-serif" fontWeight="800" fontSize="8">₹</text>
@@ -44,7 +44,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <circle cx="24" cy="24" r="16" fill="#FFA500" opacity="0.15" stroke="#FFA500" strokeWidth="2" />
         <text x="24" y="22" textAnchor="middle" fill="#FFA500" fontFamily="Montserrat, sans-serif" fontWeight="900" fontSize="10">₹1.08</text>
         <text x="24" y="32" textAnchor="middle" fill="#0F2042" fontFamily="Montserrat, sans-serif" fontWeight="700" fontSize="7">LAKH</text>
@@ -54,7 +54,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <circle cx="24" cy="18" r="10" fill="#FFA500" opacity="0.2" />
         <circle cx="24" cy="18" r="6" fill="#FFA500" />
         <path d="M10 24 Q14 20 18 24" stroke="#e0e0e0" strokeWidth="3" strokeLinecap="round" fill="none" />
@@ -67,7 +67,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <rect x="12" y="14" width="24" height="20" rx="3" stroke="#FFA500" strokeWidth="2.5" />
         <line x1="24" y1="14" x2="24" y2="34" stroke="#FFA500" strokeWidth="1.5" />
         <path d="M6 24 L12 24" stroke="#0F2042" strokeWidth="2" strokeLinecap="round" />
@@ -84,7 +84,7 @@ const BENEFITS = [
   },
   {
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
         <rect x="14" y="22" width="20" height="14" rx="1" stroke="#FFA500" strokeWidth="2" fill="#FFA500" opacity="0.1" />
         <line x1="14" y1="26" x2="34" y2="26" stroke="#FFA500" strokeWidth="1" />
         <line x1="14" y1="30" x2="34" y2="30" stroke="#FFA500" strokeWidth="1" />

@@ -21,19 +21,24 @@ const Hero = () => {
       <div className="hero__container container">
         {/* Left Content */}
         <div className="hero__content">
-          <div className="hero__badge">
+          {/* <div className="hero__badge">
             <span className="hero__badge-dot" />
             PM Surya Ghar Muft Bijli Yojana
-          </div>
+          </div> */}
 
           <h1 className="hero__title">
-            TRANSFORM YOUR HOME WITH{' '}
-            <span className="hero__title-highlight">FREE ELECTRICITY!</span>
+            RUDRA SOLAR SOLUTIONS
+            <span className="hero__title-pvt"> PVT. LTD.</span>
           </h1>
 
-          <h2 className="hero__subtitle">
-            Har Ghar Pe Roshni, Rudra Ki Guarantee
-          </h2>
+          <p className="hero__tagline">
+            Harness the Power of Sun —{' '}
+            <span className="hero__tagline-highlight">Transform Your Home with Free Electricity!</span>
+          </p>
+
+          <p className="hero__slogan">
+            "Har Ghar Pe Roshni, Rudra Ki Guarantee"
+          </p>
 
           <ul className="hero__features">
             <li className="hero__feature">
@@ -75,7 +80,7 @@ const Hero = () => {
           <div className="hero__image-glow" />
           <img
             src={heroImage}
-            alt="Modern home with solar panels under bright sunlight"
+            alt="Rudra Solar Solutions Pvt. Ltd. solar panel installation on a modern home"
             className="hero__image"
           />
           <div className="hero__image-badge">

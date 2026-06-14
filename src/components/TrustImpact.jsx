@@ -87,7 +87,7 @@ const TrustImpact = () => {
         <div className="trust-impact__grid stagger-children">
           <div className="trust-impact__card animate-on-scroll">
             <div className="trust-impact__card-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
                 <path d="M12 34C12 28.4772 17.4772 24 24 24C30.5228 24 36 28.4772 36 34" stroke="var(--gold)" strokeWidth="3" strokeLinecap="round" />
                 <circle cx="24" cy="14" r="6" fill="var(--gold)" opacity="0.3" stroke="var(--gold)" strokeWidth="3" />
                 <path d="M6 38C6 34.6863 9.68629 32 14 32" stroke="var(--gold)" strokeWidth="2.5" strokeLinecap="round" opacity="0.5" />
@@ -105,7 +105,7 @@ const TrustImpact = () => {
 
           <div className="trust-impact__card animate-on-scroll">
             <div className="trust-impact__card-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
                 <rect x="8" y="10" width="32" height="32" rx="4" stroke="var(--gold)" strokeWidth="3" />
                 <line x1="8" y1="20" x2="40" y2="20" stroke="var(--gold)" strokeWidth="2" />
                 <circle cx="18" cy="31" r="4" fill="var(--gold)" opacity="0.3" stroke="var(--gold)" strokeWidth="2" />
@@ -122,7 +122,7 @@ const TrustImpact = () => {
 
           <div className="trust-impact__card animate-on-scroll">
             <div className="trust-impact__card-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
                 <circle cx="24" cy="24" r="16" stroke="var(--gold)" strokeWidth="3" fill="var(--gold)" opacity="0.1" />
                 <path d="M16 24 L22 30 L32 18" stroke="var(--gold)" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -136,7 +136,7 @@ const TrustImpact = () => {
 
           <div className="trust-impact__card animate-on-scroll">
             <div className="trust-impact__card-icon">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
                 <circle cx="24" cy="24" r="18" stroke="var(--gold)" strokeWidth="3" />
                 <path d="M24 10 V24 L32 28" stroke="var(--gold)" strokeWidth="3.5" strokeLinecap="round" />
                 <circle cx="24" cy="24" r="4" fill="var(--gold)" />

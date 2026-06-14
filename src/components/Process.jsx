@@ -72,7 +72,7 @@ const Process = () => {
               {/* Connector arrow (not on last) */}
               {index < STEPS.length - 1 && (
                 <div className="process__connector">
-                  <svg viewBox="0 0 40 12" fill="none">
+                  <svg viewBox="0 0 40 12" fill="none" aria-hidden="true" role="img">
                     <path d="M0 6 L32 6" stroke="var(--gold)" strokeWidth="2" strokeDasharray="4 3" />
                     <path d="M28 2 L34 6 L28 10" stroke="var(--gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>

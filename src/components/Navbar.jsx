@@ -55,8 +55,9 @@ const Navbar = () => {
           href="#home"
           className="navbar__logo"
           onClick={(e) => handleNavClick(e, '#home')}
+          aria-label="Rudra Solar Solutions Pvt. Ltd. Home"
         >
-          <img src={logo} alt="Rudra Solar Solutions" className="navbar__logo-img" />
+          <img src={logo} alt="Rudra Solar Solutions Pvt. Ltd. logo" className="navbar__logo-img" />
         </a>
 
         {/* Desktop Nav Links */}

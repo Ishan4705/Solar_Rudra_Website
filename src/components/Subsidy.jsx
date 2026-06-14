@@ -66,7 +66,9 @@ const Subsidy = () => {
           {/* Right: Energy Flow Diagram */}
           <div className="subsidy__diagram animate-on-scroll">
             <div className="subsidy__diagram-card">
-              <svg viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg" className="subsidy__diagram-svg">
+              <svg viewBox="0 0 380 340" fill="none" xmlns="http://www.w3.org/2000/svg" className="subsidy__diagram-svg" aria-labelledby="diagramTitle diagramDesc" role="img">
+                <title id="diagramTitle">PM Surya Ghar Solar Energy Flow Diagram</title>
+                <desc id="diagramDesc">Interactive flow chart showing solar generation from solar panels to household usage, battery storage, net metering, and feeding excess power to the national grid.</desc>
                 {/* Sun */}
                 <circle cx="190" cy="40" r="24" fill="#FFA500" opacity="0.2" />
                 <circle cx="190" cy="40" r="16" fill="#FFA500" />

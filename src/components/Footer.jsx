@@ -79,9 +79,9 @@ const Footer = () => {
 
           {/* Column 3: Branding */}
           <div className="footer__col footer__col--brand">
-            <img src={logo} alt="Rudra Solar Solutions" className="footer__brand-logo" />
+            <img src={logo} alt="Rudra Solar Solutions Pvt. Ltd. brand logo" className="footer__brand-logo" />
             <div className="footer__brand-ornament">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation">
                 <path d="M40 4 L48 32 L76 32 L54 50 L62 78 L40 60 L18 78 L26 50 L4 32 L32 32 Z"
                   fill="none" stroke="var(--gold)" strokeWidth="1.5" opacity="0.3" />
                 <path d="M40 16 L45 32 L62 32 L48 44 L54 60 L40 50 L26 60 L32 44 L18 32 L35 32 Z"
