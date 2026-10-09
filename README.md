@@ -2,7 +2,7 @@
 
 A premium, modern, fully responsive, and modular single-page React landing page built for **Rudra Solar Solutions Pvt. Ltd.** The project utilizes Vite for fast development and HMR, styled with clean vanilla CSS following design tokens for colors, typography, and spacing.
 
-## 🌟 Features
+## Features
 
 - **Modular React Architecture**: Scalable folder structure with isolated components for easy maintenance.
 - **Glassmorphic Floating Navbar**: Automatically transitions from transparent to blur/glass on scroll. Highly optimized spacing for core links (Home, Benefits, PM Surya Ghar, Contact Us).
@@ -15,7 +15,7 @@ A premium, modern, fully responsive, and modular single-page React landing page 
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Framework**: [React 19](https://react.dev/)
 - **Build Tool**: [Vite](https://vite.dev/)
@@ -24,7 +24,7 @@ A premium, modern, fully responsive, and modular single-page React landing page 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Solar_Rudra_Website/
@@ -46,7 +46,7 @@ Solar_Rudra_Website/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
